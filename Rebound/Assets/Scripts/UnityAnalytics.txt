@@ -1,0 +1,97 @@
+/* Primary Author: Steven Drovie
+ */
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Analytics;
+
+public class UnityAnalytics : MonoBehaviour
+{
+    private float levelSecondsElapsed = 0;
+    private float gameSecondsElapsed = 0;
+
+    private int levelDeaths = 0;
+    private int gameDeaths = 0;
+
+    private int levelStomps = 0;
+    private int gameStomps = 0;
+
+    public void LevelStarted(int level)
+    {
+        levelSecondsElapsed = 0;
+        levelStomps = 0;
+
+        StartCoroutine(levelSeconds());
+        AnalyticsEvent.LevelStart(level);
+    }
+
+    IEnumerator levelSeconds()
+    {
+        ++levelSecondsElapsed;
+        yield return new WaitForSeconds(1);
+    }
+
+    public void LevelCompleted(int level)
+    {
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("Level Deaths", levelDeaths);
+        customParams.Add("Level Time Elapsed", levelSecondsElapsed);
+        customParams.Add("Level Stomps", levelStomps);
+        AnalyticsEvent.LevelComplete(level, customParams);
+    }
+
+    public void LevelDeaths(int level, GameObject killer)
+    {
+        ++levelDeaths;
+        ++gameDeaths;
+
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("Killer", killer);
+        customParams.Add("Level Deaths", levelDeaths);
+        AnalyticsEvent.LevelFail(level, customParams);
+    }
+
+    public void GameStarted()
+    {
+        StartCoroutine(gameSeconds());
+        AnalyticsEvent.GameStart();
+    }
+
+    IEnumerator gameSeconds()
+    {
+        ++gameSecondsElapsed;
+        yield return new WaitForSeconds(1);
+    }
+
+    public void GameCompleted()
+    {
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("Game Seconds", gameSecondsElapsed);
+        customParams.Add("Game Deaths", gameDeaths);
+        customParams.Add("Game Stomps", gameStomps);
+        AnalyticsEvent.GameOver(null, customParams);
+    }
+
+    public void QuitLevel(int level)
+    {
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("Level", level);
+        customParams.Add("Level Deaths", levelDeaths);
+        customParams.Add("Level Stomps", levelStomps);
+        AnalyticsEvent.LevelQuit(level, customParams);
+    }
+
+    public void Stomps()
+    {
+        ++levelStomps;
+        ++gameStomps;
+    }
+
+    public void HowToPlayAccessed(int level)
+    {
+        Dictionary<string, object> customParams = new Dictionary<string, object>();
+        customParams.Add("Level Accessed", level);
+        AnalyticsEvent.ScreenVisit("How To Play", customParams);
+    }
+}

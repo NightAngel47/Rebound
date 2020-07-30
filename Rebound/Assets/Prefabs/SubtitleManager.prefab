@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2531956186619984115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2531956186619984113}
+  - component: {fileID: 2531956186619984118}
+  - component: {fileID: 457468488}
+  m_Layer: 0
+  m_Name: SubtitleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2531956186619984113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531956186619984115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2531956186619984118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531956186619984115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d227a99813793444089fed243634e00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitleText: {fileID: 0}
+  tutorialSentence: AAAAAAAHHH
+  tutorialClip: {fileID: 8300000, guid: ab057d9928c865a4ab6ca4518680a40f, type: 3}
+  sentences:
+  - Wha...What happened? It is so dark...
+  - "My eyes hurt so much, but my vision should come back\u2026 "
+  - "Any minute now...no no no no\u2026"
+  - "Noooo...Why why why me\u2026"
+  - Why god, why did you do this to me??
+  - WHY ME?!
+  - "What will it take..? What do I have to do\u2026."
+  - I will do ANYTHING!
+  - Please...anything...
+  - Where am I...
+  - Where do I go...
+  - How do I continue...
+  - I am blind...
+  - Okay...I need some help...
+  - I am not okay...
+  audioClips:
+  - {fileID: 8300000, guid: 80880ab7e3a315a46959db29b27607de, type: 3}
+  - {fileID: 8300000, guid: 7ce1c6ee4dc0bf04f9a34f9b0907d987, type: 3}
+  - {fileID: 8300000, guid: 1b9d18a0bc1a6e44db5ababf62ae88f0, type: 3}
+  - {fileID: 8300000, guid: cfcf2e7935a1a094a8ab8b93279eb97f, type: 3}
+  - {fileID: 8300000, guid: 50bea840fcc30d8499057b4e32396c2c, type: 3}
+  - {fileID: 8300000, guid: 64884673eec17014d93b95e3330ce351, type: 3}
+  - {fileID: 8300000, guid: 7e1d392f542dcbd449473eb533adcb0f, type: 3}
+  - {fileID: 8300000, guid: e897901c02968da46868ed65ef4759e8, type: 3}
+  - {fileID: 8300000, guid: cdc62c7db353f0d4cac06a3852c2eb97, type: 3}
+  - {fileID: 8300000, guid: 6ac32a6e547b78447983cf34c998f2f1, type: 3}
+  - {fileID: 8300000, guid: 24e854953263ab74da657d362451ab2e, type: 3}
+  - {fileID: 8300000, guid: 47bb21429fbe7f14080c6467fcb91a2b, type: 3}
+  - {fileID: 8300000, guid: a2f83a2e75a6a9d40ba169bffd5d94bf, type: 3}
+  - {fileID: 8300000, guid: fb34bc183ac50ba419e9b65193e31a2a, type: 3}
+  - {fileID: 8300000, guid: d06657ed2be20f7438221cc3950dd75c, type: 3}
+--- !u!82 &457468488
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531956186619984115}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243478286934370092, guid: bb91a33fdca9c824d869158f0de3fea9,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

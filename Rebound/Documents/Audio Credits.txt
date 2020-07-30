@@ -1,0 +1,10 @@
+This game uses these sounds from freesound:
+S: female_hurt.wav by thatbennyguy -- https://freesound.org/s/203976/ -- License: Creative Commons 0
+S: 04140 hardwood walking - looping.wav by Robinhood76 -- https://freesound.org/s/180054/ -- License: Attribution Noncommercial
+S: stomp1.WAV by stomachache -- https://freesound.org/s/46520/ -- License: Creative Commons 0
+
+This game uses these sounds from soundbible:
+S: shooting_star-Mike_Koenig-1132888100.wav -- http://soundbible.com/1744-Shooting-Star.html -- License: Attribution 3.0
+S: Button_Push-Mike_Koenig-1659525069.wav -- http://soundbible.com/1950-Button-Push.html -- License: Attribution 3.0
+S: Click-SoundBible.com-1387633738.wav -- http://soundbible.com/783-Click.html -- License: Attribution 3.0
+S: Big_door_closed-Clemens_F-941522533.wav -- http://soundbible.com/1586-Big-Door-Closed.html -- License: Public Domain
