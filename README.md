@@ -5,4 +5,4 @@ The player must explore the mechanics as well as the levels using visualized sou
 
 <p>----------------------------------------------------------------------------------------<br>Alex Cline - Producer <a href="https://twitter.com/daRealAlexCline" class="DashboardProfileCard-screennameLink u-linkComplex u-linkClean js-nav" rel="noopener"><span class="username u-dir" dir="ltr">@<span class="u-linkComplex-target">daRealAlexCline</span></span></a><br>Steven Drovie - Programmer&nbsp;<a href="https://twitter.com/SDrovie" class="ProfileHeaderCard-screennameLink u-linkComplex js-nav"><span class="username u-dir" dir="ltr">@<span class="u-linkComplex-target">SDrovie</span></span></a><br>Trent Lewis - Level Designer @TrentLe90003656</p>
 
-Itch.io: https://clinealex10.itch.io/rebound
+Itch.io: <a href="https://clinealex10.itch.io/rebound">Rebound by Alex Cline, Steven Drovie</a>
